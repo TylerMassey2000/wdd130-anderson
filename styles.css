@@ -76,6 +76,19 @@ nav a {
 
 .hero p {
   font-size: 1.25rem;
+  color: var(--accent1);
 }
 
-/* M*
+/* M*/
+/*CSS for the golf tips page*/
+ .tips h1{
+    font-size: 2em;
+    margin-left: 10px;
+  }
+  .tips_list{
+    border:5px solid #81C784;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-left: 20px;
+    font-size: 1.2em;
+  }
