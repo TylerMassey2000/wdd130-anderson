@@ -69,6 +69,13 @@ nav a {
   padding: 5rem 1rem;
 }
 
+#guidebox {
+  width: auto;
+  margin: 0, auto;
+  border-style: solid;
+  border-color: #2E7D32;
+}
+
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
