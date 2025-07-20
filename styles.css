@@ -1,94 +1,148 @@
-/* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap');
-
-/* Root Colors */
-:root {
-  --primary-color: #FFFFFF;
-  --text-color: #212121;
-  --accent1: #2E7D32;
-  --accent2: #81C784;
-  --max-width: 1100px;
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Global Styles */
 body {
-  margin: 0;
   font-family: 'Lato', sans-serif;
-  color: var(--text-color);
-  background-color: var(--primary-color);
+  color: #212121;
+  background-color: #FFFFFF;
   line-height: 1.6;
 }
 
-h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--accent1);
-}
-
-a {
-  text-decoration: none;
-  color: var(--accent1);
-}
-
-a:hover {
-  color: var(--accent2);
-}
-
-/* Header */
+/* Header styles */
 header {
-  background-color: var(--accent1);
-  color: white;
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #2E7D32;
+  padding: 1rem 2rem;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  height: 50px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
+  gap: 1.5rem;
 }
 
 nav a {
   color: white;
+  text-decoration: none;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Hero Section */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
 .hero {
-  background: url('images/hero-golf.jpg') no-repeat center center/cover;
-  color: white;
+  position: relative;
   text-align: center;
-  padding: 5rem 1rem;
+  color: white;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.hero-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(33, 33, 33, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.hero-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
-.hero p {
-  font-size: 1.25rem;
-  color: var(--accent1);
+.hero-text p {
+  font-size: 1.2rem;
 }
 
-/* M*/
-/*CSS for the golf tips page*/
- .tips h1{
-    font-size: 2em;
-    margin-left: 10px;
-  }
-  .tips_list{
-    border:5px solid #81C784;
-    border-radius: 10px;
-    margin-right: 40px;
-    margin-left: 20px;
-    font-size: 1.2em;
-  }
+/* About section */
+.about {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Preview cards */
+.previews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+  background-color: #f9f9f9;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2E7D32;
+  padding: 0.5rem;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+}
+
+/* Icons strip */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #81C784;
+}
+
+.icons img {
+  width: 60px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #212121;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+}
