@@ -2,69 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tee-Time Tutor</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
+  <!-- Header -->
   <header>
-    <div class="logo">
-      <!-- Logo Placeholder -->
-      <img src="images/logo-placeholder.png" alt="Tee-Time Tutor Logo" width="150" />
-    </div>
+    <img src="images/logo.png" alt="Tee-Time Tutor Logo" class="logo">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="golf-basics">Golf Basics</a></li>
-        <li><a href="gear-tipss.html">Gear & Tips</a></li>
+        <li><a href="golf-basics.html">Golf Basics</a></li>
+        <li><a href="gear-tips.html">Gear & Tips</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <!-- Hero Image Placeholder -->
-      <img src="images/hero-placeholder.jpg" alt="Golf course or ball on tee" class="hero-image" />
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/hero-banner.jpg" alt="Golf course banner" class="hero-img">
+    <div class="hero-text">
       <h1>Welcome to Tee-Time Tutor</h1>
       <p>Your beginner's guide to the world of golf.</p>
-    </section>
+    </div>
+  </section>
 
-    <!-- About the Site -->
-    <section class="about-site">
-      <h2>About This Site</h2>
-      <p>Whether you’ve never swung a club or just want to understand golf better, Tee-Time Tutor is your go-to guide for learning the game. We break down the sport’s history, its unique language, and how to get started with confidence.</p>
-    </section>
+  <!-- About Section -->
+  <section class="about">
+    <p>
+      Whether you’ve never swung a club or just want to understand golf better, Tee-Time Tutor is your go-to guide for learning the game.
+      We break down the sport’s history, its unique language, and how to get started with confidence.
+    </p>
+  </section>
 
-    <!-- Preview Cards -->
-    <section class="preview-cards">
-      <article class="card">
-        <h3><a href="golf-basics.html">Golf Basics & History</a></h3>
+  <!-- Preview Cards for Child Pages -->
+  <section class="previews">
+    <!-- Golf Basics Card -->
+    <div class="card">
+      <a href="golf-basics.html">
+        <img src="images/basics-preview.jpg" alt="Golf Basics Preview">
+        <h3>Golf Basics & History</h3>
         <p>Learn how golf began and master the lingo used on the course.</p>
-      </article>
-      <article class="card">
-        <h3><a href="gear-tips.html">Clubs & Tips</a></h3>
+      </a>
+    </div>
+
+    <!-- Gear & Tips Card -->
+    <div class="card">
+      <a href="gear-tips.html">
+        <img src="images/gear-preview.jpg" alt="Gear and Tips Preview">
+        <h3>Clubs & Tips</h3>
         <p>Discover which clubs to use, how to swing smarter, and what gear works best.</p>
-      </article>
-    </section>
+      </a>
+    </div>
+  </section>
 
-    <!-- Icon Strip Placeholder -->
-    <section class="icon-strip">
-      <h2>Golf Gear Icons</h2>
-      <div class="icons">
-        <img src="images/icon-golfball.png" alt="Golf ball icon" />
-        <img src="images/icon-tee.png" alt="Tee icon" />
-        <img src="images/icon-putter.png" alt="Putter icon" />
-        <img src="images/icon-flag.png" alt="Flag icon" />
-        <img src="images/icon-scorecard.png" alt="Scorecard icon" />
-      </div>
-    </section>
+  <!-- Icon Strip -->
+  <section class="icons">
+    <img src="images/icon-ball.png" alt="Golf Ball Icon">
+    <img src="images/icon-tee.png" alt="Golf Tee Icon">
+    <img src="images/icon-putter.png" alt="Putter Icon">
+    <img src="images/icon-flag.png" alt="Flag Icon">
+    <img src="images/icon-scorecard.png" alt="Scorecard Icon">
+  </section>
 
-  </main>
-
+  <!-- Footer -->
   <footer>
     <p>“The longest recorded drive in golf was 515 yards!”</p>
   </footer>
